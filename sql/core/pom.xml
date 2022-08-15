@@ -27,11 +27,13 @@
   </parent>
 
   <artifactId>spark-sql_2.12</artifactId>
+  <version>3.3.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Spark Project SQL</name>
   <url>https://spark.apache.org/</url>
   <properties>
     <sbt.project.name>sql</sbt.project.name>
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
 
   <dependencies>
@@ -47,35 +49,36 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sketch_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${sparkVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${sparkVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-catalyst_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${sparkVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-catalyst_${scala.binary.version}</artifactId>
-      <version>${project.version}</version>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
     </dependency>
 
     <!--
@@ -85,6 +88,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>

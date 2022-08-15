@@ -36,6 +36,7 @@
     <hadoop.deps.scope>provided</hadoop.deps.scope>
     <shuffle.jar>${project.build.directory}/scala-${scala.binary.version}/spark-${project.version}-yarn-shuffle.jar</shuffle.jar>
     <shade>org/sparkproject/</shade>
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
 
   <dependencies>
@@ -48,6 +49,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <scope>test</scope>
     </dependency>
 
@@ -58,6 +60,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
