@@ -48,6 +48,8 @@
     <test.exclude.tags></test.exclude.tags>
     <test.include.tags></test.include.tags>
     <volcano.exclude>**/*Volcano*.scala</volcano.exclude>
+
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
   <packaging>jar</packaging>
   <name>Spark Project Kubernetes Integration Tests</name>
@@ -73,6 +75,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
     </dependency>
     <dependency>

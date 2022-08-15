@@ -30,6 +30,7 @@
   <properties>
     <sbt.project.name>yarn</sbt.project.name>
     <jersey-1.version>1.19</jersey-1.version>
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
 
   <profiles>
@@ -124,6 +125,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>

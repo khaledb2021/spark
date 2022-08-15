@@ -30,6 +30,7 @@
   <properties>
     <sbt.project.name>kubernetes</sbt.project.name>
     <volcano.exclude>**/*Volcano*.scala</volcano.exclude>
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
 
   <profiles>
@@ -71,6 +72,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
     </dependency>
 

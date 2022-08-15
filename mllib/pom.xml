@@ -28,6 +28,7 @@
   <artifactId>spark-mllib_2.12</artifactId>
   <properties>
     <sbt.project.name>mllib</sbt.project.name>
+    <sparkVersion>3.3.0</sparkVersion>
   </properties>
   <packaging>jar</packaging>
   <name>Spark Project ML Library</name>
@@ -140,6 +141,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
     </dependency>
 
     <!--
@@ -149,6 +151,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
+      <version>${sparkVersion}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
