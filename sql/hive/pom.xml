@@ -27,13 +27,13 @@
   </parent>
 
   <artifactId>spark-hive_2.12</artifactId>
-  <version>3.3.0</version>
+  <version>3.3.2</version>
   <packaging>jar</packaging>
   <name>Spark Project Hive</name>
   <url>https://spark.apache.org/</url>
   <properties>
     <sbt.project.name>hive</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <dependencies>

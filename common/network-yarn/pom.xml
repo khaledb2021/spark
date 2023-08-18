@@ -36,7 +36,7 @@
     <hadoop.deps.scope>provided</hadoop.deps.scope>
     <shuffle.jar>${project.build.directory}/scala-${scala.binary.version}/spark-${project.version}-yarn-shuffle.jar</shuffle.jar>
     <shade>org/sparkproject/</shade>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <dependencies>

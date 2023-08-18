@@ -30,7 +30,7 @@
   <properties>
     <sbt.project.name>kubernetes</sbt.project.name>
     <volcano.exclude>**/*Volcano*.scala</volcano.exclude>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <profiles>

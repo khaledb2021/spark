@@ -27,13 +27,13 @@
   </parent>
 
   <artifactId>spark-catalyst_2.12</artifactId>
-  <version>3.3.0-SNAPSHOT</version>
+  <version>3.3.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Spark Project Catalyst</name>
   <url>https://spark.apache.org/</url>
   <properties>
     <sbt.project.name>catalyst</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <dependencies>

@@ -32,7 +32,7 @@
 
   <properties>
     <sbt.project.name>repl</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <dependencies>

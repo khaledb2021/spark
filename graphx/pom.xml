@@ -28,7 +28,7 @@
   <artifactId>spark-graphx_2.12</artifactId>
   <properties>
     <sbt.project.name>graphx</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
   <packaging>jar</packaging>
   <name>Spark Project GraphX</name>

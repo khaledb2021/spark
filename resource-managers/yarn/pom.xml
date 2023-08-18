@@ -30,7 +30,7 @@
   <properties>
     <sbt.project.name>yarn</sbt.project.name>
     <jersey-1.version>1.19</jersey-1.version>
-    <sparkVersion>3.3.0</sparkVersion>
+    <sparkVersion>3.3.2</sparkVersion>
   </properties>
 
   <profiles>
