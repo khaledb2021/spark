@@ -27,7 +27,7 @@
   </parent>
 
   <artifactId>spark-catalyst_2.12</artifactId>
-  <version>3.3.2-SNAPSHOT</version>
+  <version>3.3.2</version>
   <packaging>jar</packaging>
   <name>Spark Project Catalyst</name>
   <url>https://spark.apache.org/</url>

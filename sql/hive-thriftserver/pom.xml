@@ -27,7 +27,7 @@
   </parent>
 
   <artifactId>spark-hive-thriftserver_2.12</artifactId>
-  <version>3.3.2-SNAPSHOT</version>
+  <version>3.3.2</version>
   <packaging>jar</packaging>
   <name>Spark Project Hive Thrift Server</name>
   <url>https://spark.apache.org/</url>
