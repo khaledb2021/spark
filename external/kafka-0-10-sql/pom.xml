@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.apache.spark</groupId>
     <artifactId>spark-parent_2.12</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.0-INX-1.0</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
@@ -29,7 +29,6 @@
   <artifactId>spark-sql-kafka-0-10_2.12</artifactId>
   <properties>
     <sbt.project.name>sql-kafka-0-10</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
   </properties>
   <packaging>jar</packaging>
   <name>Kafka 0.10+ Source for Structured Streaming</name>
@@ -157,7 +156,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jmock</groupId>
@@ -172,12 +171,26 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
 
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>incortax-central</id>
+      <name>incortax-central-releases</name>
+      <url>${env.ARTIFACTORY_REPO_URL}</url>
+    </repository>
+    <snapshotRepository>
+      <id>incortax-snapshots</id>
+      <name>incortax-central-snapshots</name>
+      <url>${env.ARTIFACTORY_REPO_URL}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <outputDirectory>target/scala-${scala.binary.version}/classes</outputDirectory>
     <testOutputDirectory>target/scala-${scala.binary.version}/test-classes</testOutputDirectory>

@@ -21,19 +21,18 @@
   <parent>
     <groupId>org.apache.spark</groupId>
     <artifactId>spark-parent_2.12</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.0-INX-1.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>spark-core_2.12</artifactId>
-  <version>3.3.0-maxtest-SNAPSHOT</version>
+  <version>${parent.version}</version>
   <packaging>jar</packaging>
   <name>Spark Project Core</name>
   <url>https://spark.apache.org/</url>
 
   <properties>
     <sbt.project.name>core</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
   </properties>
   
   <dependencies>
@@ -85,27 +84,27 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-launcher_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-kvstore_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-network-common_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-network-shuffle_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-unsafe_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>javax.activation</groupId>
@@ -439,20 +438,20 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-launcher_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-network-shuffle_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
@@ -464,7 +463,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -517,7 +516,6 @@
 
   </dependencies>
 
-
   <distributionManagement>
     <repository>
         <id>incortax-central</id>
@@ -530,7 +528,6 @@
         <url>${env.ARTIFACTORY_REPO_URL}</url>
     </snapshotRepository>
   </distributionManagement>
-
 
   <build>
     <outputDirectory>target/scala-${scala.binary.version}/classes</outputDirectory>

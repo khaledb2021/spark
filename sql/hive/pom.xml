@@ -22,42 +22,41 @@
   <parent>
     <groupId>org.apache.spark</groupId>
     <artifactId>spark-parent_2.12</artifactId>
-    <version>3.3.0</version>
+    <version>3.3.0-INX-1.0</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <artifactId>spark-hive_2.12</artifactId>
-  <version>3.3.0</version>
+  <version>${parent.version}</version>
   <packaging>jar</packaging>
   <name>Spark Project Hive</name>
   <url>https://spark.apache.org/</url>
   <properties>
     <sbt.project.name>hive</sbt.project.name>
-    <sparkVersion>3.3.0</sparkVersion>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sql_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sql_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -65,13 +64,13 @@
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-catalyst_${scala.binary.version}</artifactId>
       <type>test-jar</type>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
-      <version>${sparkVersion}</version>
+      <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
