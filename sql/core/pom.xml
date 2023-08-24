@@ -27,7 +27,7 @@
   </parent>
 
   <artifactId>spark-sql_2.12</artifactId>
-  <version>3.3.0-SNAPSHOT</version>
+  <version>3.3.0</version>
   <packaging>jar</packaging>
   <name>Spark Project SQL</name>
   <url>https://spark.apache.org/</url>
