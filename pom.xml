@@ -354,6 +354,17 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>incortax-central</id>
+      <name>incortax-central</name>
+      <url>${env.ARTIFACTORY_REPO_URL}</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+    </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>

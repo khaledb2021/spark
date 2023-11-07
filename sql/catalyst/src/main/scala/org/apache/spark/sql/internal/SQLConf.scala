@@ -4175,6 +4175,13 @@ object SQLConf {
       .booleanConf
       .createWithDefault(true)
 
+  val SUPPORT_ALL_LANGUAGES = buildConf("spark.sql.support.all.languages")
+      .doc("Set this flag to enable creating schemas and tables in all languages." +
+        " Clearing the flag permits creating schemas and tables in English only.")
+      .version("3.4.1")
+      .booleanConf
+      .createWithDefault(true)
+
   /**
    * Holds information about keys that have been deprecated.
    *
@@ -5002,6 +5009,8 @@ class SQLConf extends Serializable with Logging {
 
   def allowsTempViewCreationWithMultipleNameparts: Boolean =
     getConf(SQLConf.ALLOW_TEMP_VIEW_CREATION_WITH_MULTIPLE_NAME_PARTS)
+
+  def allLanguagesSupported: Boolean = getConf(SQLConf.SUPPORT_ALL_LANGUAGES)
 
   /** ********************** SQLConf functionality methods ************ */
 
